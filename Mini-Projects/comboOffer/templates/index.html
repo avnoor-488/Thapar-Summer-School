@@ -1,0 +1,80 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}" />
+</head>
+<body>
+
+<!-- Responsive Desktop/Mobile Login form considered to be used as mobile first approach--> 
+<!-- Wave animation credit: https://codepen.io/goodkatz -->
+
+<div class="header">
+
+<!--Content before waves-->
+<div class="inner-header flex">
+<!--Just the logo.. Don't mind this-->
+
+<h3>Combo Offers</h3>
+</div>
+
+<!--Waves Container-->
+<div>
+    <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+    viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+    <defs>
+        <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+    </defs>
+    <g class="parallax">
+        <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+        <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+        <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+        <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+    </g>
+    </svg>
+    </div>
+    <!--Waves end-->
+
+    </div>
+    <!--Header ends-->
+
+    <!--Content starts-->
+    <div class="content flex">
+    {% if messages %}
+        {% for message in messages %}
+                <div class="alert alert-{{ message.tags }}">{{ message }}</div>
+        {% endfor %}
+    {% endif %}
+    <form method="POST" enctype="multipart/form-data">
+       
+      {% csrf_token %}
+      <!-- {{ form }} -->
+        <label for="email"></label>
+        <input type="email" name="email" placeholder="Email" required spellcheck="false"/>
+
+        
+        <label for="lower_limit"></label>
+        <input type="text" name= "lower_limit" placeholder="Lower Limit" required spellcheck="false"/>        
+        
+        <label for="upper_limit"></label>
+        <input type="text" name= "upper_limit" placeholder="Upper Limit" required spellcheck="false"/>        
+        
+        <label for="doc"></label>
+        <input type="file" name="doc" placeholder="upload only csv file" >
+        <br>
+        <a href="/static/sampleData.csv" download>
+            click here to download sample data file
+        </a>
+        <button class="submit-btn" style="margin-top:30px">Submit</button>
+    </form>
+    </div>
+
+
+    
+<!--Content ends-->
+
+</body>
+</html>
