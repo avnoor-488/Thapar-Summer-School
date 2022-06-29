@@ -1,178 +1,167 @@
-@import url(//fonts.googleapis.com/css?family=Montserrat:400:300:500:600);
-
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300);
+* {
+  font-family: 'Open Sans', sans-serif;
+}
 html{
-  overflow:hidden;
-  font-family: 'Montserrat', sans-serif;
+    background:rgb(32, 30, 30);
 }
-
 body {
-  margin:0;
-}
-
-h3 {
-  font-family: 'Montserrat', sans-serif;
-  font-weight:600;
-  letter-spacing: 2px;
-  font-size:32px;
-}
-p {
-  font-family: 'Lato', sans-serif;
-  letter-spacing: 1px;
-  font-size:14px;
-  color: #333333;
-}
-
-.header {
-  position:relative;
-  text-align:center;
-  background: linear-gradient(60deg, rgba(84,58,183,1) 0%, rgba(0,172,193,1) 100%);
-  color:white;
-}
-
-
-.inner-header {
-  height:20vh;
-  width:100%;
   margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background: #111;
+  background-repeat: no-repeat;
+}
+
+.signupSection {
+  background: url(https://source.unsplash.com/TV2gg2kZD1o/1600x800);
+  /* background-repeat: no-repeat; */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 800px;
+  height: 450px;
+  text-align: center;
+  display: flex;
+  color: white;
+  box-shadow: 3px 10px 20px 5px rgba(0, 0, 0, .5);
+}
+
+.info {
+  width: 45%;
+  background: rgba(20, 20, 20, .8);
+  /* padding: 30px 0; */
+  border-right: 5px solid rgba(30, 30, 30, .8);
+}
+.info h2 {
+    /* padding-top: 30px; */
+    font-weight: 300;
+    font-size: 2.5rem;
+    padding-top: 17te0px;
+    text-align: center;
+    /* text-align: center; */
+  }
+.info p {
+    font-size: 18px;
+  }
+.info .icon {
+    font-size: 8em;
+    padding: 20px 0;
+    color: rgba(10, 180, 180, 1);
+  }
+
+
+.signupForm {
+  width: 70%;
+  padding: 30px 0;
+  background: rgba(20, 40, 40, .8);
+  transition: .2s;
+}
+.signupForm  h2 {
+    font-weight: 300;
+  }
+
+
+.inputFields {
+  margin: 15px 0;
+  font-size: 16px;
+  padding: 10px;
+  width: 250px;
+  border: 1px solid rgba(10, 180, 180, 1);
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  background: rgba(20, 20, 20, .2);
+  color: white;
+  outline: none;
+}
+
+.noBullet {
+  list-style-type: none;
   padding: 0;
 }
 
-.flex { /*Flexbox for containers*/
-  display: flex;
-  flex-direction:column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+#join-btn {
+  border: 1px solid rgba(10, 180, 180, 1);
+  background: rgba(20, 20, 20, .6);
+  font-size: 18px;
+  color: white;
+  margin-top: 20px;
+  padding: 10px 50px;
+  cursor: pointer;
+  transition: .4s;
 }
-
-.bottom-container{
-  display:flex;
-  align-items:center;
-}
-
-a{
-text-decoration:none;
- margin: 0px 5px;
-  font-family: 'Montserrat', sans-serif;
-  letter-spacing:0px;
-  font-size:14px;
-  font-weight:600;
-  color:rgb(41, 54, 179);
+#join-btn :hover {
+    background: rgba(20, 20, 20, .8);
+    padding: 10px 80px;
   
 }
 
-.waves {
-  position:relative;
+@media (min-width:300px) and (max-height: 900px){
+  span{
+    display: block;
+  }
+  .signupForm  h2 {
+    font-weight: 100;
+    margin-top:10%;
+
+  }
+
+  .signupSection {
+    background: url(https://source.unsplash.com/TV2gg2kZD1o/1600x800);
+/*     background: none; */
+/*     background-repeat: repeat; */
+/*     position:absolute; */
+/*     margin-top:10%; */
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    color: white;
+    box-shadow: 3px 10px 20px 5px rgba(0, 0, 0, .5);
+
+  }
+  .signupForm {
+   padding-top:100px;
   width: 100%;
-  height:15vh;
-  margin-bottom:-7px; /*Fix for safari gap*/
-  min-height:100px;
-  max-height:150px;
-}
-
-.content {
-  position:relative;
   height:100%;
-  text-align:center;
-  background-color: white;
+  padding: 30px 0;
+  background: rgba(20, 40, 40, .8);
+  transition: .2s;
+/*   position:relative; */
 }
 
-/* Animation */
-
-.parallax > use {
-  animation: move-forever 25s cubic-bezier(.55,.5,.45,.5)     infinite;
-}
-.parallax > use:nth-child(1) {
-  animation-delay: -2s;
-  animation-duration: 7s;
-}
-.parallax > use:nth-child(2) {
-  animation-delay: -3s;
-  animation-duration: 10s;
-}
-.parallax > use:nth-child(3) {
-  animation-delay: -4s;
-  animation-duration: 13s;
-}
-.parallax > use:nth-child(4) {
-  animation-delay: -5s;
-  animation-duration: 20s;
-}
-@keyframes move-forever {
-  0% {
-   transform: translate3d(-90px,0,0);
+  .info{
+    display: none;
   }
-  100% { 
-    transform: translate3d(85px,0,0);
+  .info h2 {
+    /* padding-top: 30px; */
+    font-weight: 300;
+    font-size: 2.5rem;
+/*     margin-top:5%; */
+/*     padding-top: 10px; */
+    text-align: center;
+    /* text-align: center; */
   }
-}
-/*Shrinking for mobile*/
-@media (max-width: 768px) {
-  .form{
-    max-width:80vh;
+  body{
+    background-color:black;
+    background-repeat:repeat-x;
+/*     background: url(https://source.unsplash.com/TV2gg2kZD1o/1600x800); */
   }
-  .waves {
-    height:40px;
-    min-height:40px;
+  .inputFields {
+
+    width:70%;
+
   }
-  .content {
-    height:70vh;
- }
-  h1 {
-    font-size:24px;
+  #join-btn {
+
+    font-size: 16px;
+    padding: 5px 50px;
   }
-}
+  form{
+    height: 70%;
+  }
 
-form{
-  display:flex;
-  width:80vh;
-  justify-content:center;
-  align-items:center;
-  flex-direction:column;
-  padding:10px;
-  margin:10px;
-}
-
-input{
-  width:80%;
-  padding:8px;
-  margin:10px;
-  height:32px;
-  font-size:1rem;;
-  border:none;
-  box-shadow: 0px 0px 15px 0px rgb(0 0 0 / 20%);
-  border-radius:25px;
-  outline:none;
-  text-align:center;
-  
-}
-
-
-
-.submit-btn{
-  font-size:1rem;
-  border:none;
-  height:44px;
-  width:40%;
-  margin:20px 10px;
-  border-radius:25px;
-  background-color:#3A5FBB;
-  color:#ffffff
-  
-}
-
-button:hover {
-  box-shadow: 0px 0px 35px 0px rgb(0 0 0 / 30%);
-  
-}
-
-
-input[type=file]::file-selector-button {
-  border: 2px solid #2862e0;
-  padding: .2em .4em;
-  border-radius: .2em;
-  background-color: #a29bfe;
-  transition: 1s;
-  align-items: center;
-  margin-left: 420px;
 }
