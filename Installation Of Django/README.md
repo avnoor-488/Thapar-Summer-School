@@ -125,7 +125,7 @@ The command will install the latest version of Django.
 If you want to install a different Django version, you can specify the version as follows:
 
 ```bash
-(venv)> pip install django==3.1
+(venv)> pip install django==3.2.9
 
 ```
 Once the installation finishes, you need to verify that Django has been installed. To do that, type the following command:
@@ -137,10 +137,10 @@ You will get output showing you the Django version installed on your system:
 
 ```bash
 (venv) PS C:\users\dead-hacker\Desktop\django_project> django-admin --version
-3.2.7
+3.2.9
 ```
 
-At the time of writing, the latest Django version is 3.2.7, and that’s why my output shows that.
+At the time of writing, the latest Django version is 3.2.9, and that’s why my output shows that.
 
 You’ve now installed Django on your system, great job! You’ll begin to create a Django project.
 
