@@ -8,7 +8,7 @@ A Django Based Web-App to convert the Upper case letters in a word file to Lower
 
 ## Environment Variables
 
-To run this project, you will need to add the following environment variables to your .env file
+To run this project, you will need to add the following environment variables to your .env file , this file has to be made in the same directory in which settings.py is there .
 
 `EMAIL_HOST_USER = " email from which you'll send the results " `
 * Do not enter the gmail password here .
