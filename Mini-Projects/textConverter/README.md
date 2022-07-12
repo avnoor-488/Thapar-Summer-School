@@ -11,8 +11,10 @@ A Django Based Web-App to convert the Upper case letters in a word file to Lower
 To run this project, you will need to add the following environment variables to your .env file
 
 `EMAIL_HOST_USER = " email from which you'll send the results " `
+* Do not enter the gmail password here .
+For generating password for mail system [click here](https://myaccount.google.com/apppasswords?rapt=AEjHL4PfI3cfF1f8D8WYpMN7uWSNu6nNpr9bneiUYYT-LWL-xqk-L4ftpDHOesxZrboomyXAhCW52c1Ggwk2YSL5RPvNNGZreg) , select the app as Mail and device as Windows Computer and Replace your password with the 16-character password shown above  
 
-`EMAIL_HOST_PASSWORD = "password of email "`
+`EMAIL_HOST_PASSWORD = "16 - character code generated "`
 
 ## Run Locally
 
