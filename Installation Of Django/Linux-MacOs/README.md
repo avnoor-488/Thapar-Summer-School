@@ -1,5 +1,5 @@
 
-# Setup guide of Django for  Window Users
+# Setup guide of Django for  Linux-Mac Users
 
 
 
