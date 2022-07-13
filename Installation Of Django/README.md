@@ -63,9 +63,15 @@ PS C:\Users\dead-hacker\Desktop\django_project>
 ```
 
 Now that you’ve created the working directory for your project, you’ll create a virtual environment where you’ll install Django.
-## Step 4 - Creating the Virtual Environment
+## Step 4 - Installing and Creating the Virtual Environment
 
-In this step, you’ll create a virtual environment for your project. A virtual environment is an isolated environment in Python where you can install the project dependencies without affecting other Python projects. This lets you create different projects that use different versions of Django.
+You'll first need to install the virtual environment package in global system to use it in project directories .
+
+```bash 
+pip install virtualenv
+```
+
+Next step, you’ll create a virtual environment for your project. A virtual environment is an isolated environment in Python where you can install the project dependencies without affecting other Python projects. This lets you create different projects that use different versions of Django.
 
 If you don’t use a virtual environment, your projects in your system will use the same Django version installed globally. This might look like a good thing until the latest version of Django comes out with breaking changes causing your projects to fail altogether.
 
