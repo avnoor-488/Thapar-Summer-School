@@ -1,0 +1,5 @@
+pycaret
+django-environ>=0.8.1
+django-import_export
+virtualenv
+django-gunicorn
