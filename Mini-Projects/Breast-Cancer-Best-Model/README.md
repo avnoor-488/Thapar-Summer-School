@@ -11,9 +11,9 @@ A Django Based Web-App to predict the best model from the given dataset to the u
 
 To run this project, you will need to add the following environment variables to your .env file
 
-`EMAIL_HOST_USER = " email from which you'll send the results " `
+`EMAIL_HOST_USER=" email from which you'll send the results " `
 
-`EMAIL_HOST_PASSWORD = "password of email "`
+`EMAIL_HOST_PASSWORD="password of email "`
 
 ## Run Locally
 
