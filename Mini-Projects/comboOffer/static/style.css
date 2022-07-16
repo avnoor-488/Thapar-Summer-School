@@ -25,7 +25,7 @@ p {
 .header {
   position:relative;
   text-align:center;
-  background: linear-gradient(60deg, #285fe0 10%, rgb(10 224 49) 100%);
+  background: linear-gradient(60deg, rgba(84,58,183,1) 0%, rgba(0,172,193,1) 100%);
   color:white;
 }
 
@@ -134,7 +134,7 @@ form{
 }
 
 input{
-  width:84%;
+  width:80%;
   padding:8px;
   margin:10px;
   height:32px;
@@ -156,7 +156,7 @@ input{
   width:40%;
   margin:20px 10px;
   border-radius:25px;
-  background:linear-gradient(60deg, #285fe0 10%, rgb(10 224 49) 100%);
+  background-color:#3A5FBB;
   color:#ffffff
   
 }
@@ -165,7 +165,6 @@ button:hover {
   box-shadow: 0px 0px 35px 0px rgb(0 0 0 / 30%);
   
 }
-
 
 
 input[type=file]::file-selector-button {
