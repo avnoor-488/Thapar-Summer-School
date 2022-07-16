@@ -9,7 +9,7 @@ https://docs.djangoproject.com/en/3.2/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.2/ref/settings/
 """
-
+# python manage.py runserver 0.0.0.0:8000
 from pathlib import Path
 import os
 import environ
