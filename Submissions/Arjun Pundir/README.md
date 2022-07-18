@@ -1,67 +1,19 @@
+<h3 align="center">A Django based App which allows a user to figure out what Products he/she must include in a Combo by simply specifying the Product Costs in csv file(Sample attached in app) and Price bounds(Upper and Lower Limit) This App will automatically send Combos generated to the User's email defined by user on website.</h3>
 
-# Find Combo Offers within  a given range
+<p align="left">
+</p>
 
-A Django Based Web-App to predict the possible combinations of the entities in a csv.
-
-### Built with
-* [Django 3.2.9](https://www.djangoproject.com/)
-
-
-## Environment Variables
-
-To run this project, you will need to add the following environment variables to your .env file , this file has to be made in the same directory in which settings.py is there .
-
-`EMAIL_HOST_USER = " email from which you'll send the results " `
-* Do not enter the gmail password here
-For generating password for mail system [click here](https://myaccount.google.com/apppasswords?rapt=AEjHL4PfI3cfF1f8D8WYpMN7uWSNu6nNpr9bneiUYYT-LWL-xqk-L4ftpDHOesxZrboomyXAhCW52c1Ggwk2YSL5RPvNNGZreg) , select the app as Mail and device as Windows Computer and Replace your password with the 16-character password shown above  
-
-`EMAIL_HOST_PASSWORD = "16 - character code generated "`
-
-## Run Locally
-
-#### Open Windows PowerShell and Run these commands
+<h3 align="left">Languages and Tools used:</h3>
 
 
-Clone the project
+<p align="left"> <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/> </a> <a href="https://www.djangoproject.com/" target="_blank" rel="noreferrer"> <img src="https://cdn.worldvectorlogo.com/logos/django.svg" alt="django" width="40" height="40"/> </a> <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> </a> <a href="https://www.linux.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="linux" width="40" height="40"/> </a> <a href="https://www.python.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> </a> </p>
 
-```bash
-  git clone https://github.com/avnoor-488/Thapar-Summer-School.git
+<h3 align="left">Gif</h3>
 
-```
+<img align="center" alt="" width="1000" src="gif2.gif">	
 
-Go to the project directory
+<h3 align="left">Result Screenshots</h3>
+<img align="center" alt="" width="1000" src="css1.png">
 
-```bash
-  cd Thapar-Summer-School/Mini-Projects/comboOffer/
-```
-Create a virtual environment to install dependencies in and activate it:
+<img align="center" alt="" width="1000" src="combo1.png">
 
-```bash
-  python -m venv venv
-  venv\Scripts\activate 
-```
-You'll see like this on PowerShell
-
-```bash
-(venv) PS C:\Users\dead-hacker\Desktop\Thapar-Summer-School\Mini-Projects\comboOffer>
-
-```
-
-Now, Install dependencies
-
-```bash
-  pip install -r requirements.txt
-```
-
-Start the server
-
-```bash
-  python manage.py runserver
-```
-
-#### Also access this app by [clicking here](https://combo-offer.dead-hacker.tech/)
- 
-
-## Contributors
-
-- [@Avnoor Singh](https://www.github.com/avnoor-488)
