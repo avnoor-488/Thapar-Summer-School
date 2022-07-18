@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'style.css' %}" />
+</head>
+<body>
+
+
+<div class="header">
+
+<!--Content before waves-->
+<div class="inner-header flex">
+<!--Just the logo.. Don't mind this-->
+
+<h3> DEAR USER</h3>
+</div>
+
+<!--Waves Container-->
+<div>
+    <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+    viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+    <defs>
+        <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+    </defs>
+    <g class="parallax">
+        <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+        <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+        <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+        <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+    </g>
+    </svg>
+    </div>
+    <!--Waves end-->
+
+    </div>
+    <!--Header ends-->
+
+    <!--Content starts-->
+    
+        {%if result %}
+			{%if result == 99 %}
+				<!-- <h4> </h4> -->
+                <div class="form">
+                <h3 style="text-align: left;margin-top: -400px;font-size: 3rem;">Thank you for providing your data</h3>
+                <br>
+                <h3 style="text-align: center;margin:auto;margin-top: auto;font-size: 3rem;padding:10px">Sorry no combos possible!!!Try for some other limits </h3>
+			{%else%}
+                <h3 style="text-align: center;margin:auto;margin-top: auto;font-size: 3rem;padding:10px">Thank you for the Data</h3>	
+                <br>
+                <h3 style="text-align: center;margin:auto;margin-top: auto;font-size: 3rem;padding:10px">Kindly Check your email! </h3>
+				<br>
+                <p style="text-align: center;margin:auto;font-size: 2.5rem;margin-top: auto;padding:10px">Combo Information sent!</p>
+			{%endif%}
+		{%endif%}
+    </div>
+
+    
+<!--Content ends-->
+
+</body>
+</html>
