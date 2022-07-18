@@ -12,5 +12,5 @@ https://gunjotvirk.herokuapp.com/
 
 ## Screenshots
 
-![App Screenshot](https://drive.google.com/file/d/1WA8YUInc92zjpu70Tmpwfh7r7cOhXcdx/view?usp=sharing)
-![App Screenshot](https://drive.google.com/file/d/1P_YDjOKiVo0Edp8004AE6QwY1t8gftBr/view?usp=sharing)
+![App Screenshot](https://imgur.com/XXATzQw)
+![App Screenshot](https://imgur.com/gFGLdW2)
