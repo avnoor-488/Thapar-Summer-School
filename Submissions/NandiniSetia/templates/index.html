@@ -1,0 +1,73 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Portal</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="{% static 'style.css' %}" />
+</head>
+<body>
+
+	<div class="contact1">
+		<div class="container-contact1">
+			<div class="contact1-pic js-tilt" data-tilt>
+				<img src="https://blush.design/api/download?shareUri=AM56ft9HNIGaIXYS&c=Hair_0%7Effc943-0.2%7E878787_Skin_0%7E7d4439-0.2%7Eecafa3&w=800&h=800&fm=png" alt="IMG">
+			</div>
+
+			<!-- <form class="contact1-form validate-form">
+				<span class="contact1-form-title">
+					Combo Deals
+				</span> -->
+
+				<div class="content flex">
+		    {% if messages %}
+		        {% for message in messages %}
+		                <div class="alert alert-{{ message.tags }}">{{ message }}</div>
+		        {% endfor %}
+		    {% endif %}
+		    <form method="POST" enctype="multipart/form-data">
+
+		      {% csrf_token %}
+					<div class="heading">
+						<h1>Combo Deals</h1>
+
+					</div>
+					<div class="wrap-input1 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
+		        <label for="email"></label>
+		        <input class="input1" type="email" name="email" placeholder="Enter Email" required spellcheck="false"/>
+						<span class="shadow-input1"></span>
+					</div>
+
+					<div class="wrap-input1 validate-input">
+		        <label for="lower_limit"></label>
+		        <input class="input1" type="text" name= "lower_limit" placeholder="Enter Lower Limit" required spellcheck="false"/>
+						<span class="shadow-input1"></span>
+					</div>
+
+					<div class="wrap-input1 validate-input">
+		        <label for="upper_limit"></label>
+		        <input class="input1" type="text" name= "upper_limit" placeholder="Enter Upper Limit" required spellcheck="false"/>
+						<span class="shadow-input1"></span>
+					</div>
+
+				<div class="wrap-input1 validate-input">
+		        <label for="doc"></label>
+		        <input class=" file" type="file" name="doc" placeholder="Upload only csv file" >
+						<span class="shadow-input1"></span>
+				</div>
+		        <br>
+		        <a href="/static/sampleData.csv" download>
+		            Download sample data file by clicking here
+		        </a>
+						<div class="container-contact1-form-btn">
+		        <button class="contact1-form-btn" style="margin-top:30px">Submit</button>
+						</div>
+		    </form>
+		    </div>
+		</div>
+	</div>
+
+
+</body>
+</html>
