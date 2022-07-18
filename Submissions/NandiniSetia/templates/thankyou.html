@@ -1,0 +1,58 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Portal</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="{% static 'style.css' %}" />
+</head>
+<body>
+
+	<div class="contact1">
+		<div class="container-contact1">
+			<div class="contact1-pic js-tilt" data-tilt>
+				<img src="https://img.freepik.com/free-vector/mail-sent-concept-illustration_114360-96.jpg?t=st=1658084426~exp=1658085026~hmac=4ce0c0fcb0df3b253f24fe1becba1a1b6a8155310dc7d203a7b157fe2753c434&w=740" alt="IMG">
+			</div>
+
+			<!-- <form class="contact1-form validate-form">
+				<span class="contact1-form-title">
+					Combo Deals
+				</span> -->
+
+				<div class="content flex">
+		    {% if messages %}
+		        {% for message in messages %}
+		                <div class="alert alert-{{ message.tags }}">{{ message }}</div>
+		        {% endfor %}
+		    {% endif %}
+		    <form method="POST" enctype="multipart/form-data">
+
+		      {% csrf_token %}
+					<div class="heading">
+						<h1>USER</h1>
+
+					</div>
+
+                  {%if result %}
+          			{%if result == 99 %}
+          				<!-- <h4> </h4> -->
+                          <h3>Thank You for submitting your data.</h3>
+                          <br>
+                          <h3>Sorry, No combos Possible!!! </h3>
+          			{%else%}
+                          <h3>Thank You for submitting your data.</h3>
+                          <br>
+                          <h3>Check your email! </h3>
+          				<br>
+                          <p>We have sent you an email having the details of combos</p>
+          			{%endif%}
+          		{%endif%}
+
+		    </div>
+		</div>
+	</div>
+
+
+</body>
+</html>
