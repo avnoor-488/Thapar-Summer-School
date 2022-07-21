@@ -7,11 +7,10 @@ This App will automatically send Combos generated to the User's email defined by
 
 ## Click here to access the app
 
-https://comboofferapp.bhateja.tech/
+https://gunjotvirk.herokuapp.com/
 
 
 ## Screenshots
 
-![App Screenshot](https://i.imgur.com/plruqGR.png)
-![App Screenshot](https://i.imgur.com/TEya5vL.png)
-![App Screenshot](https://i.imgur.com/i9mnr1n.png)
+![App Screenshot](https://drive.google.com/file/d/1WA8YUInc92zjpu70Tmpwfh7r7cOhXcdx/view?usp=sharing)
+![App Screenshot](https://drive.google.com/file/d/1P_YDjOKiVo0Edp8004AE6QwY1t8gftBr/view?usp=sharing)
